@@ -1,0 +1,44 @@
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.dll
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.pdb
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.AssemblyReference.cache
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CoreCompileInputs.cache
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.dll
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.pdb
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.dll
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.pdb
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+F:\Projects\ADG\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CopyComplete
+D:\New folder\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.dll
+D:\New folder\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.pdb
+D:\New folder\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.dll
+D:\New folder\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+D:\New folder\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.pdb
+D:\New folder\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+D:\New folder\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.AssemblyReference.cache
+D:\New folder\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CoreCompileInputs.cache
+D:\New folder\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CopyComplete
+D:\New folder\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.dll
+D:\New folder\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.pdb
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.dll
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.pdb
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.dll
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.pdb
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.AssemblyReference.cache
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CoreCompileInputs.cache
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CopyComplete
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.dll
+C:\Users\Shristi\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.pdb
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.dll
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\BllNationalSymposium.pdb
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.dll
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\DalNationalSymposium.pdb
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.AssemblyReference.cache
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CoreCompileInputs.cache
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CopyComplete
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.dll
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.pdb

@@ -1,0 +1,6 @@
+D:\New folder\NationalSymposium\ModelNationalSymposium\bin\Release\ModelNationalSymposium.dll
+D:\New folder\NationalSymposium\ModelNationalSymposium\bin\Release\ModelNationalSymposium.pdb
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Release\ModelNationalSymposium.csproj.AssemblyReference.cache
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Release\ModelNationalSymposium.csproj.CoreCompileInputs.cache
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Release\ModelNationalSymposium.dll
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Release\ModelNationalSymposium.pdb

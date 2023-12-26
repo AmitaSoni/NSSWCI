@@ -1,0 +1,18 @@
+F:\Projects\ADG\NationalSymposium\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+F:\Projects\ADG\NationalSymposium\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+F:\Projects\ADG\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.AssemblyReference.cache
+F:\Projects\ADG\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.CoreCompileInputs.cache
+F:\Projects\ADG\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.dll
+F:\Projects\ADG\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.pdb
+D:\New folder\NationalSymposium\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+D:\New folder\NationalSymposium\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.AssemblyReference.cache
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.CoreCompileInputs.cache
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.dll
+D:\New folder\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.pdb
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.AssemblyReference.cache
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.CoreCompileInputs.cache
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.dll
+C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.pdb
