@@ -75,8 +75,8 @@
     <section class="card-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 "> 
-                    <h2 class="mb-1 text-center"> Welcome Message / Call to Action </h2>
+                <div class="col-12  col-md-12 col-lg-12 text-center"> 
+                    <h2 class="mb-1 "> Welcome Message / Call to Action </h2>
                     <p>Welcome to the National Symposium on Safe Water and Chlorination Initiatives! Join us as we gather experts, officials, and organizations
                         to share insights and strategies for ensuring clean and safe water</p>
                 </div>
@@ -85,16 +85,16 @@
                         <h3 class="text-center">Objectives of the Symposium </h3>
                         <ul>
                             <li>
-                                <strong>1. </strong> Knowledge sharing on Safe Water by National JJM, States r representatives and Evidence Action
+                                 Knowledge sharing on Safe Water by National JJM, States representatives and Evidence Action.
                             </li>
                             <li>
-                                <strong>2. </strong> Disseminate Safe Water ILC Pilot project summary, results &amp; findings
+                               Disseminate Safe Water ILC Pilot project summary, results &amp; findings.
                             </li>
                             <li>
-                                <strong>3. </strong> Establish a National Working Group on Safe Water &amp; ILC to recommend policies, interventions and other technically appropriate solutions                            
+                                Establish a National Working Group on Safe Water &amp; ILC to recommend policies, interventions and other technically appropriate solutions.                            
                             </li>
                             <li>    
-                                <strong>4. </strong> Develop and sustain a Safe Water Ecosystem (with representations from NJJM, States, Academic Institutions, Private Sector players, WASH Forum partners, and Evidence Action etc.)                            
+                                Develop and sustain a Safe Water Ecosystem (with representations from NJJM, States, Academic Institutions, Private Sector players, WASH Forum partners, and Evidence Action etc.)                            
                             </li>
                         </ul>
                     </div>
@@ -108,12 +108,12 @@
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-6"> 
                             <div class="card-wrap card-wrap-sm card-wrap-guide mb-4">
-                                <h4><a href="submission-guidelines.html">Submission Guidelines <i class="fa fa-file" aria-hidden="true"></i></a></h4>
+                                <h4><a href="submission-guidelines.html" target="_blank">Submission Guidelines <i class="fa fa-file" aria-hidden="true"></i></a></h4>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-6"> 
                             <div class="card-wrap card-wrap-sm card-wrap-faq mb-4">
-                                <h4> <a href="faq.html">FAQs<i class="fa fa-question-circle" aria-hidden="true"></i></a></h4>
+                                <h4> <a href="faq.html" target="_blank">FAQs<i class="fa fa-question-circle" aria-hidden="true"></i></a></h4>
                                
 
                           </div>
@@ -128,7 +128,7 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-6"> 
                             <div class="card-wrap card-wrap-sm">
-                                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Upload Presentation <i class="fa fa-upload" aria-hidden="true"></i></a></h4>
+                                <h4><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Upload Presentation <i class="fa fa-upload" aria-hidden="true"></i></a></h4>
                             </div>
                         </div>
                     </div>
@@ -267,6 +267,11 @@
     <div class="mb-3 file-upload-wrap"> 
         <asp:FileUpload ID="FileUpload1" runat="server" class="form-control"/>
         <%--<input class="form-control" type="file" id="formFile">--%>
+        <div id="dViewFile" runat="server"></div>
+         <%--<asp:Literal ID="fileLink" runat="server"></asp:Literal>
+           <asp:HyperLink ID="hypDownload" runat="server" Text="View File" NavigateUrl="" Target="_blank" Visible="false" />
+                        <br />
+                        <iframe id="I1" runat="server"  frameborder="0" height="500px" name="I1" width="100%"></iframe>--%>
       </div> 
 </div>
                     </div>

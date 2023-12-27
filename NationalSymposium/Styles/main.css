@@ -120,10 +120,10 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 700;
 	margin-bottom: 10px;
 }
-.card-section p{
+.card-section p {
 	padding: 0 9%;
-	margin:0 auto 5px;
-	color:#070707;
+	margin: 0 auto 15px;
+	rdbParticipants color:#070707;
 	font-size: .9rem;
 	font-weight: 500;
 }
@@ -245,6 +245,15 @@ h1,h2,h3,h4,h5,h6 {
 .card-wrap h4, .card-wrap-sm h4 a {
 	font-size: 1rem;
 	color:var(--blackColor);
+}
+
+.card-wrap ul {
+	list-style-type: disc;
+	text-align: justify;
+}
+
+.sub-guide-sec .card-wrap ul {
+	list-style-type: disclosure-closed;
 }
 .card-wrap-sm h4 a {
 	text-decoration: none;
@@ -440,21 +449,24 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 42px;
 }
 
-#radioButtonList {
-	width:100%;
+#radioButtonList, #rdbParticipants {
+	width: 100%;
 	margin-bottom: 10px;
 }
-#radioButtonList tr {
-	display: inline-table;
-	width:50%;
+#rdbParticipants { 
+	margin-bottom: 0;
 }
-#radioButtonList label {
-	margin-left: 10px;
-}
-#radioButtonList input {
-	display: inline-block;
-	margin-top: 6px;
-}
+	#radioButtonList tr, #rdbParticipants tr {
+		display: inline-table;
+		width: 50%;
+	}
+	#radioButtonList label, #rdbParticipants label {
+		margin-left: 10px;
+	}
+	#radioButtonList input, #rdbParticipants input {
+		display: inline-block;
+		margin-top: 6px;
+	}
 
 
 #txtemail, #ddlCategories2 {

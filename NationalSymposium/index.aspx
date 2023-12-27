@@ -55,8 +55,8 @@
      <section class="card-section">
          <div class="container">
              <div class="row justify-content-center mb-4">
-                 <div class="col-12 "> 
-                     <h2 class="mb-1 text-center"> Welcome Message / Call to Action </h2>
+                 <div class="col-12 col-md-12 col-lg-12 text-center"> 
+                     <h2 class="mb-1 "> Welcome Message / Call to Action </h2>
                      <p>Welcome to the National Symposium on Safe Water and Chlorination Initiatives! Join us as we gather experts, officials, and organizations
                          to share insights and strategies for ensuring clean and safe water</p>
                  </div>
@@ -65,16 +65,16 @@
                          <h3 class="text-center">Objectives of the Symposium </h3>
                          <ul>
                              <li>
-                                 <strong>1. </strong> Knowledge sharing on Safe Water by National JJM, States r representatives and Evidence Action
+                                  Knowledge sharing on Safe Water by National JJM, States representatives and Evidence Action.
                              </li>
                              <li>
-                                 <strong>2. </strong> Disseminate Safe Water ILC Pilot project summary, results &amp; findings
+                                  Disseminate Safe Water ILC Pilot project summary, results &amp; findings.
                              </li>
                              <li>
-                                 <strong>3. </strong> Establish a National Working Group on Safe Water &amp; ILC to recommend policies, interventions and other technically appropriate solutions                            
+                                  Establish a National Working Group on Safe Water &amp; ILC to recommend policies, interventions and other technically appropriate solutions.                            
                              </li>
                              <li>    
-                                 <strong>4. </strong> Develop and sustain a Safe Water Ecosystem (with representations from NJJM, States, Academic Institutions, Private Sector players, WASH Forum partners, and Evidence Action etc.)                            
+                                  Develop and sustain a Safe Water Ecosystem (with representations from NJJM, States, Academic Institutions, Private Sector players, WASH Forum partners, and Evidence Action etc.)                            
                              </li>
                          </ul>
                      </div>
@@ -84,22 +84,22 @@
                          <h3 class="text-center">Participants </h3>
                          <ul>
                              <li>
-                                 <strong>1. </strong> National JJM leadership
+                                  National JJM leadership.
                              </li>
                              <li>
-                                 <strong>2. </strong> Senior Officials from State Water and PHED Departments
+                                  Senior Officials from State Water and PHED Departments.
                              </li>
                              <li>
-                                 <strong>3. </strong> Academic Research Institutions - NEERI, IITs, NITs, NEERI                            
+                                  Academic Research Institutions - NEERI, IITs, NITs, NEERI.                            
                              </li>
                              <li>    
-                                 <strong>4. </strong> Private Sector Organizations in Water Supply & Treatment Works                            
+                                  Private Sector Organizations in Water Supply & Treatment Works.                            
                              </li>
                              <li>    
-                                 <strong>5. </strong> WASH Community Organisations - WASH Institute, WaterAid, Piramal Foundation, T ata Trusts, CEEW, Bill & Melinda Gates Foundation                            
+                                  WASH Community Organisations - WASH Institute, WaterAid, Piramal Foundation, Tata Trusts, CEEW, Bill &amp; Melinda Gates Foundation.                            
                              </li>
                              <li>    
-                                 <strong>6. </strong> Representatives from Development Innovation Lab (DIL) and Evidence Action                            
+                                  Representatives from Development Innovation Lab (DIL) and Evidence Action.                            
                              </li>
                          </ul>
                      </div>
