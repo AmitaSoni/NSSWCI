@@ -34,3 +34,12 @@ C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\DalNation
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\DalNationalSymposium\obj\Debug\DalNationalSymposium.csproj.CopyComplete
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\DalNationalSymposium\obj\Debug\DalNationalSymposium.dll
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\DalNationalSymposium\obj\Debug\DalNationalSymposium.pdb
+E:\NSSWCI\DalNationalSymposium\bin\Debug\DalNationalSymposium.dll
+E:\NSSWCI\DalNationalSymposium\bin\Debug\DalNationalSymposium.pdb
+E:\NSSWCI\DalNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+E:\NSSWCI\DalNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+E:\NSSWCI\DalNationalSymposium\obj\Debug\DalNationalSymposium.csproj.AssemblyReference.cache
+E:\NSSWCI\DalNationalSymposium\obj\Debug\DalNationalSymposium.csproj.CoreCompileInputs.cache
+E:\NSSWCI\DalNationalSymposium\obj\Debug\DalNationalSymposium.csproj.CopyComplete
+E:\NSSWCI\DalNationalSymposium\obj\Debug\DalNationalSymposium.dll
+E:\NSSWCI\DalNationalSymposium\obj\Debug\DalNationalSymposium.pdb

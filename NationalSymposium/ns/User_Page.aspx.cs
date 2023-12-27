@@ -10,6 +10,7 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using System.Reflection;
 
 namespace NSSWC
 {
@@ -21,10 +22,11 @@ namespace NSSWC
             if (!IsPostBack)
             {
                 // Call the method to fetch data from the database
-                FetchDataFromDatabase();
                 BindDropDown();
                 BindDropDown1();
                 BindDropDown2();
+                FetchDataFromDatabase();
+               
             }
             if (CheckAuthentication())
             {
@@ -145,11 +147,15 @@ namespace NSSWC
                     {
                         // Populate TextBox
                         txtName.Text = reader["Name"].ToString();
-                        
+                        //string filepath = reader["FilePath"].ToString();
+
 
                         // Populate DropDownList
-                        ddlCategories1.Items.Add(reader["Designation"].ToString());
+                        ddlCategories1.SelectedValue = reader["Designation"].ToString();
+                        ddlCategories.SelectedValue = reader["State"].ToString();
+                        ddlCategories2.SelectedValue = reader["Organization"].ToString();
                         txtMobile.Text = reader["MobileNo"].ToString();
+                        //dViewFile.InnerHtml = $"<a href=\"../Upload/{FileUpload1.FileName}\">View File</a>";
                     }
                     txtemail.Text = Convert.ToString(Session["username"]);
                     // Close the reader and connection
@@ -197,39 +203,8 @@ namespace NSSWC
 
             
                 if (FileUpload1.HasFile)
-            {
-                //    //try
-                //    //{
-                //        // Specify the path where you want to save the uploaded file
-                //        string uploadFolderPath = Server.MapPath("~/Upload/");
-                //        string fileName = Path.GetFileName(FileUpload1.FileName);
-                //        string filePath = Path.Combine(uploadFolderPath, fileName);
-
-                //        // Save the file to the specified path
-                //        FileUpload1 .SaveAs(filePath);
-                //        SqlCommand command = new SqlCommand("Sp_FileDetails", conn);
-                //        command.CommandType = CommandType.StoredProcedure;
-                //        conn.Open();
-                //        command.Parameters.AddWithValue("@pEmailId", Session["username"]);
-                //        command.Parameters.AddWithValue("@pFileName", fileName);
-                //        command.Parameters.AddWithValue("@pFilePath", filePath);
-                //        command.Parameters.AddWithValue("@pName", txtName.Text);
-                //        command.Parameters.AddWithValue("@pState", ddlCategories.SelectedValue);
-                //        command.Parameters.AddWithValue("@pDesignation", ddlCategories1.SelectedValue);
-                //        command.Parameters.AddWithValue("@pMobileNo",Convert.ToInt32(txtMobile.Text));
-                //        command.ExecuteNonQuery();
-                //        lblmessage.Text = "File uploaded successfully!";
-                //    //}
-                //    //catch (Exception ex)
-                //    //{
-                //      //  lblmessage.Text = "Error: " + ex.Message;
-                //    //}
-                //}
-                //else
-                //{
-                //    lblmessage.Text = "Please select a file to upload.";
-                //}
-
+                {
+                int maxFileSize = 5 * 1024 * 1024; // 5MB in bytes
                 // Get the file extension
                 string fileExtension = Path.GetExtension(FileUpload1.FileName).ToLower();
 
@@ -239,8 +214,10 @@ namespace NSSWC
                 // Specify allowed MIME types (e.g., "image/jpeg", "image/png", "application/pdf")
                 string[] allowedMimeTypes = { ".pptx", ".pptm", ".ppt" };
 
+                HttpPostedFile uploadedFile = FileUpload1.PostedFile;
+
                 // Check if the MIME type is allowed
-                if (Array.IndexOf(allowedMimeTypes, fileExtension) != -1)
+                if (Array.IndexOf(allowedMimeTypes, fileExtension) != -1 && uploadedFile.ContentLength <= maxFileSize)
                 {
                     // Process the file (e.g., save it to the server)
                     string filePath = Server.MapPath("~/Upload") + "/" + FileUpload1.FileName;
@@ -251,17 +228,25 @@ namespace NSSWC
                     SqlCommand command = new SqlCommand("Sp_FileDetails", conn);
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@pEmailId", Session["username"]);
-                    command.Parameters.AddWithValue("@pFileName", fileExtension);
+                    command.Parameters.AddWithValue("@pFileName", filePath);
                     command.Parameters.AddWithValue("@pFilePath", filePath);
                     command.Parameters.AddWithValue("@pName", txtName.Text);
                     command.Parameters.AddWithValue("@pState", ddlCategories.SelectedValue);
                     command.Parameters.AddWithValue("@pDesignation", ddlCategories1.SelectedValue);
-                    command.Parameters.AddWithValue("@pMobileNo", Convert.ToInt32(txtMobile.Text));
+                    command.Parameters.AddWithValue("@pOrganization", ddlCategories2.SelectedValue);
+                    command.Parameters.AddWithValue("@pMobileNo", txtMobile.Text);
                     command.ExecuteNonQuery();
-                }
-                    
+                        dViewFile.InnerHtml = $"<a href=\"../Upload/{FileUpload1.FileName}\">View File</a>";
+                        //hypDownload.NavigateUrl = "" + FileUpload1.FileName;
+                        //hypDownload.Visible = true;
+
+                        // Show file in iframe
+                        //I1.Attributes["src"] = ResolveUrl("~/Upload/") + FileUpload1.FileName;
+
+                    }
+
                     // Display a success message
-                   // lblmessage.Text = "File uploaded successfully!";
+                    // lblmessage.Text = "File uploaded successfully!";
                 }
                 else
                 {

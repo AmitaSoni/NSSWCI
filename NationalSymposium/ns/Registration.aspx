@@ -73,17 +73,17 @@
                                                 <asp:ListItem Text="Participant" Value="1" />
                                                 <asp:ListItem Text="Speaker/Panelist" Value="0" />
                                             </asp:RadioButtonList>
-                                            <asp:RequiredFieldValidator ID="rfvParticipants" runat="server" ErrorMessage="Please Select User" ControlToValidate="rdbParticipants"></asp:RequiredFieldValidator>
+                                            <asp:RequiredFieldValidator ID="rfvParticipants" runat="server" ErrorMessage="Please Select User" ControlToValidate="rdbParticipants" class="form-text"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col col-md-12">
-                                            <div class="input-container mb-4">
+                                            <div class="input-container">
                                                 <i class="fa fa-compass" aria-hidden="true"></i>
                                                 <asp:DropDownList ID="ddlStates" runat="server" CssClass="form-select">
                                                 </asp:DropDownList>
-                                                <asp:RequiredFieldValidator ID="rfvStates" runat="server" ErrorMessage="Please Select States" ControlToValidate="ddlStates" InitialValue="0"></asp:RequiredFieldValidator>
+                                                <asp:RequiredFieldValidator ID="rfvStates" runat="server" ErrorMessage="Please Select States" ControlToValidate="ddlStates" InitialValue="0" class="form-text"></asp:RequiredFieldValidator>
                                             </div>
                                         </div>
                                     </div>
@@ -109,14 +109,14 @@
                                     </div>
                                     <div class="row">
                                         <div class="col col-md-6">
-                                            <div class="input-container mb-4">
+                                            <div class="input-container">
                                                 <i class="fa fa-key" aria-hidden="true"></i>
                                                 <asp:TextBox ID="txtpassword" runat="server" EnableTheming="False" placeholder="Enter Password" TextMode="Password" class="form-control"></asp:TextBox>
                                                 <asp:RequiredFieldValidator ControlToValidate="txtpassword" runat="server" class="form-text" ErrorMessage="Please enter password"></asp:RequiredFieldValidator>
                                             </div>
                                         </div>
                                         <div class="col col-md-6">
-                                            <div class="input-container mb-4">
+                                            <div class="input-container">
                                                 <i class="fa fa-briefcase" aria-hidden="true"></i>
                                                 <asp:DropDownList ID="ddlDesignation" runat="server" class="form-select" placeholder="Select Designation">
                                                 </asp:DropDownList>

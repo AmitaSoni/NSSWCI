@@ -42,3 +42,14 @@ C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNation
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CopyComplete
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.dll
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\BllNationalSymposium\obj\Debug\BllNationalSymposium.pdb
+E:\NSSWCI\BllNationalSymposium\bin\Debug\BllNationalSymposium.dll
+E:\NSSWCI\BllNationalSymposium\bin\Debug\BllNationalSymposium.pdb
+E:\NSSWCI\BllNationalSymposium\bin\Debug\DalNationalSymposium.dll
+E:\NSSWCI\BllNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+E:\NSSWCI\BllNationalSymposium\bin\Debug\DalNationalSymposium.pdb
+E:\NSSWCI\BllNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+E:\NSSWCI\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.AssemblyReference.cache
+E:\NSSWCI\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CoreCompileInputs.cache
+E:\NSSWCI\BllNationalSymposium\obj\Debug\BllNationalSymposium.csproj.CopyComplete
+E:\NSSWCI\BllNationalSymposium\obj\Debug\BllNationalSymposium.dll
+E:\NSSWCI\BllNationalSymposium\obj\Debug\BllNationalSymposium.pdb
