@@ -7,6 +7,10 @@
     <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 <link rel="stylesheet" href="../Styles/main.css" />
+    <link href="../Content/themes/base/all.css" rel="stylesheet" />
+<script src="../Scripts/jquery-3.6.0.min.js"></script>
+<script src="../Content/AdminLte310/plugins/toastr/toastr.min.js"></script>
+<link href="../Content/AdminLte310/plugins/toastr/toastr.min.css" rel="stylesheet" />
 <title>Jal Jeevan Mission</title>
 </head>
 <body>
@@ -67,14 +71,11 @@
                             <h5 class="mb-4">You can reset your password here.</h5>
                             <div class="input-container"> 
                                 <i class="fa fa-envelope" aria-hidden="true"></i> 
-                                <%--<input type="email" class="form-control" placeholder="Email Id">--%>
-                               <%-- <div id="emailHelp" class="form-text"></div>--%>
                                 <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Email Id"></asp:TextBox>
 <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Please enter your Email Id to reset the password..." ControlToValidate="txtEmail" CssClass="form-text"></asp:RequiredFieldValidator>
                             </div> 
                             <asp:Button ID="btnSend" runat="server" Text="Send" OnClick="btnSend_OnClick" CssClass="btn btn-primary common-btn" />
                             <asp:Label ID="lblMsg" runat="server" Text=""></asp:Label>
-                            <%--<button type="submit" class="btn btn-primary common-btn">Reset Password</button>--%>
                         </form>
                     </div>
                 </div>  

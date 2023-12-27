@@ -30,11 +30,12 @@ namespace NationalSymposium.ns
             string a = BllNS.Sp_ForgotPassword(Convert.ToString(ViewState[ConstString.VsUserEmail]), txtNewPassword.Text);
             if (a != "Success")
             {
-                lblMsg.Text = "Not Success";
+                //lblMsg.Text = "Not Success";
+                Utility.ShowToastrError(this, "Not Success", "Error");
             }
             else
             {
-                lblMsg.Text = "Password Changed Successfully";
+                lblMsg.Text = $"Password Changed Successfully. <a href={ConstString.LoginPage}>Click Here</a> to login";
             }
         }
     }

@@ -1,4 +1,6 @@
-﻿using NationalSymposium;
+﻿using BllNationalSymposium;
+using ModelNationalSymposium;
+using NationalSymposium;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,98 +19,47 @@ namespace NSSWC
 {
     public partial class Login : System.Web.UI.Page
     {
-       // MyConnection db = new MyConnection();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (User.Identity.IsAuthenticated)
             {
                 // Redirect the authenticated user to the next page
-                Response.Redirect("~/User_Page.aspx");
+                Response.Redirect(ConstString.AuthUserPage);
             }
-
-            
         }
-           
-        
-        protected void Btn_login_Click(object sender, EventArgs e)
+        protected void btnLogin_Click(object sender, EventArgs e)
         {
-            //SqlConnection conn = new SqlConnection("Data Source=10.22.3.161;User Id=adg;Password=adg;Initial Catalog=NSSWCI;Integrated Security=false;");
-            string connectionString = ConfigurationManager.ConnectionStrings["NSSWCIConnectionString"].ConnectionString;
-
-            
-                try
+            string username = txtUserName.Text.Trim();
+            string password = txtPassword.Text.Trim();
+            UserLogin ul = BllNS.GetUserDetails(username,password);
+            if (ul != null)
+            {
+                Session.Add(ConstString.SessionUser, ul);
+                if (ul.RoleId == ConstString.Admin)
                 {
-
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                        string username = Text_Username.Text.Trim();
-                        string password = Text_Password.Text.Trim();
-                        SqlCommand command = new SqlCommand("SP_UserLogin", conn);
-                        command.CommandType = CommandType.StoredProcedure;
-                        conn.Open();
-                        command.Parameters.AddWithValue("@pEmailId", username);
-                        command.Parameters.AddWithValue("@pHashPassword", password);
-                        SqlDataReader rd = command.ExecuteReader();
-                        if (rd.HasRows)
-                        {
-                            rd.Read();
-                            if (rd[5].ToString() == ConstString.Admin)
-                            {
-                            lblmessage.Text = "File uploaded successfully!";
-                            Session["username"] = Text_Username.Text;
-                           // Session["Organisation"] = Text_Username.Text;
-
-
-
-                                Response.Redirect("Admin_Page.aspx", false);
-                            }
-
-
-                            else if (rd[5].ToString() == ConstString.User && rememberme.Checked == true)
-                            {
-                                HttpCookie co = new HttpCookie(Text_Username.Text, Text_Password.Text);
-                                co.Expires = DateTime.Now.AddDays(5);
-                                Response.Cookies.Add(co);
-                                Session["username"] = Text_Username.Text;
-                                Response.Redirect("User_Page.aspx", false);
-                            }
-                            else if (rememberme.Checked == false)
-                            {
-                                Session["username"] = Text_Username.Text;
-                                Response.Redirect("User_Page.aspx", false);
-                            }
-                        }
-
-                        else
-                        {
-                        // Invalid credentials
-                        lblmessage.Text = "Invalid username & password";
-                        }
-
-
-                    }
+                   // Session["username"] = txtUserName.Text;
+                    Response.Redirect(ConstString.AdminPage, false);
                 }
-
-                catch (Exception ex)
+                else if (ul.RoleId == ConstString.User && rememberme.Checked == true)
                 {
-                    //MessageBox.Show(ex.ToString());
+                    HttpCookie co = new HttpCookie(ul.EmailId, ul.HashPassword);
+                    co.Expires = DateTime.Now.AddDays(5);
+                    Response.Cookies.Add(co);
+                    //Session["username"] = txtUserName.Text;
+                    Response.Redirect(ConstString.UserPage, false);
                 }
-            
-
-            
-        }
-
-        
-        protected void Btn_register_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Registration.aspx");
-        }
-
-        protected void Btn_forgetpassword_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("forgot_password.aspx");
+                else if (rememberme.Checked == false)
+                {
+                    //Session["username"] = txtUserName.Text;
+                    Response.Redirect(ConstString.UserPage, false);
+                }
+            }
+            else
+            {
+                Utility.ShowToastrError(this, "Invalid Login", "Error");
+            }
         }
     }
 
-    
-} 
+
+}

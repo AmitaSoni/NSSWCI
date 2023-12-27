@@ -111,7 +111,7 @@ namespace BllNationalSymposium
                 ul.Organization = Convert.ToString(dt.Rows[i]["Organization"]);
                 ul.HashPassword = Convert.ToString(dt.Rows[i]["HashPassword"]);
                 ul.RoleId = Convert.ToInt32(dt.Rows[i]["RoleId"]);
-                ul.UserRoles = BllNS.GetRolesById(ul.RoleId);
+                //ul.UserRoles = BllNS.GetRolesById(ul.RoleId);
                 ul.CreatedBy = Convert.ToString(dt.Rows[i]["CreatedBy"]);
                 ul.CreatedOn = Convert.ToDateTime(dt.Rows[i]["CreatedOn"]);
                 ul.UpdatedBy = Convert.ToString(dt.Rows[i]["UpdatedBy"]);
@@ -132,7 +132,7 @@ namespace BllNationalSymposium
             ul.Organization = Convert.ToString(dt.Rows[0]["Organization"]);
             ul.HashPassword = Convert.ToString(dt.Rows[0]["HashPassword"]);
             ul.RoleId = Convert.ToInt32(dt.Rows[0]["RoleId"]);
-            ul.UserRoles = BllNS.GetRolesById(ul.RoleId);
+            //ul.UserRoles = BllNS.GetRolesById(ul.RoleId);
             ul.CreatedBy = Convert.ToString(dt.Rows[0]["CreatedBy"]);
             ul.CreatedOn = Convert.ToDateTime(dt.Rows[0]["CreatedOn"]);
             ul.UpdatedBy = Convert.ToString(dt.Rows[0]["UpdatedBy"]);

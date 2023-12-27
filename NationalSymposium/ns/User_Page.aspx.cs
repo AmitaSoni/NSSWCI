@@ -10,28 +10,51 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using ModelNationalSymposium;
+using NationalSymposium;
 
 namespace NSSWC
 {
     
     public partial class User_Page : System.Web.UI.Page
     {
+        UserLogin ul;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            try
             {
-                // Call the method to fetch data from the database
-                FetchDataFromDatabase();
-                BindDropDown();
-                BindDropDown1();
-                BindDropDown2();
-            }
-            if (CheckAuthentication())
-            {
-                sUser.InnerText= Convert.ToString(Session["username"]);
+                ul = (UserLogin)Session[ConstString.SessionUser];
+                if (ul == null)
+                {
+                    Response.Redirect(ConstString.LoginPage);
+                    throw new NullReferenceException();
+                }
+                else
+                {
+                    if (ul.RoleId != ConstString.User)
+                    {
+                        Response.Redirect(ConstString.LoginPage);
+                        throw new NullReferenceException();
+                    }
+                }
+                if (!IsPostBack)
+                {
+                    // Call the method to fetch data from the database
+                    FetchDataFromDatabase();
+                    BindDropDown();
+                    BindDropDown1();
+                    BindDropDown2();
+                }
+                if (CheckAuthentication())
+                {
+                    sUser.InnerText = ul.EmailId;
 
+                }
             }
-            
+            catch (Exception ex)
+            {
+                Response.Redirect(ConstString.LoginPage);
+            }
 
         }
         private void BindDropDown()
@@ -111,7 +134,7 @@ namespace NSSWC
 
         public bool CheckAuthentication()
         {
-            if (Session["username"] != null)
+            if (ul != null)
             {
                 return true;
             }
@@ -137,7 +160,7 @@ namespace NSSWC
 
                     // Open the connection
                     connection.Open();
-                    command.Parameters.AddWithValue("@pEmailId", Convert.ToString(Session["username"]));
+                    command.Parameters.AddWithValue("@pEmailId", ul.EmailId);
 
                     // Execute the command and read data
                     SqlDataReader reader = command.ExecuteReader();
@@ -151,7 +174,7 @@ namespace NSSWC
                         ddlCategories1.Items.Add(reader["Designation"].ToString());
                         txtMobile.Text = reader["MobileNo"].ToString();
                     }
-                    txtemail.Text = Convert.ToString(Session["username"]);
+                    txtemail.Text = ul.EmailId;
                     // Close the reader and connection
                     reader.Close();
                     connection.Close();
@@ -250,7 +273,7 @@ namespace NSSWC
                         conn.Open();
                     SqlCommand command = new SqlCommand("Sp_FileDetails", conn);
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@pEmailId", Session["username"]);
+                    command.Parameters.AddWithValue("@pEmailId", ul.EmailId);
                     command.Parameters.AddWithValue("@pFileName", fileExtension);
                     command.Parameters.AddWithValue("@pFilePath", filePath);
                     command.Parameters.AddWithValue("@pName", txtName.Text);

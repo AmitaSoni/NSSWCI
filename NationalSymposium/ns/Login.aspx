@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../Styles/bootstrap.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 <link rel="stylesheet" href="../Styles/main.css"/>
+     <link href="../Content/themes/base/all.css" rel="stylesheet" />
+ <script src="../Scripts/jquery-3.6.0.min.js"></script>
+ <script src="../Content/AdminLte310/plugins/toastr/toastr.min.js"></script>
+ <link href="../Content/AdminLte310/plugins/toastr/toastr.min.css" rel="stylesheet" />
 <title>Jal Jeevan Mission</title>
     <style type="text/css">
         #Password1 {
@@ -20,15 +24,15 @@
             for (ctr = 0; ctr < allcookies.length; ctr++) {
                 var dt = allcookies[ctr];
                 var str = dt.split("=");
-                if (str[0].trim() == document.getElementById("Text_Username").value.trim()) {
-                    document.getElementById("Text_Password").value = str[1];
+                if (str[0].trim() == document.getElementById("txtUserName").value.trim()) {
+                    document.getElementById("txtPassword").value = str[1];
                     break;
                 }
 
             }
         }
         
-            </script>
+    </script>
 
 </head>
 <body>
@@ -45,30 +49,6 @@
         </div> 
     </div>
 </header>
-        <%--<div>
-            
-            <br />
-            <br />
-            
-            <asp:Label ID="Label1" runat="server" Text="User Type"></asp:Label>
-            
-            
-            <br />
-            <br />
-            <asp:Label ID="Label3" runat="server" Text="Password"></asp:Label>
-           
-            
-            <br />
-            <br />
-            <br />
-            
-            <br /> 
-            
-            <asp:Button ID="Btn_register" runat="server" Text="Register" OnClick="Btn_register_Click" Width="111px" Height="33px" style="margin-left: 69px" CausesValidation="false" />
-            <asp:Button ID="Btn_forgetpassword" runat="server" Text="Forgot Password" OnClick="Btn_forgetpassword_Click" Height="34px" Width="124px" style="margin-left: 57px" CausesValidation="false" />
-            <br />
-            
-        </div>--%>
 
         <div class="main-content">
 
@@ -109,22 +89,16 @@
                         <form>
                             <div class="input-container"> 
                                 <i class="fa fa-user" aria-hidden="true"></i> 
-                                <asp:TextBox ID="Text_Username" runat="server" class="form-control" placeholder="Email Id"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"  ErrorMessage="Please enter Email Id" ControlToValidate="Text_Username" CssClass="form-text"></asp:RequiredFieldValidator>
-                               <%-- <input type="email" class="form-control" placeholder="Email Id">
-                                <div id="emailHelp" class="form-text"></div>--%>
-                            </div>
+                                <asp:TextBox ID="txtUserName" runat="server" class="form-control" placeholder="Email Id"></asp:TextBox>
+<asp:RequiredFieldValidator ID="rfvUserName" runat="server"  ErrorMessage="Please enter Email Id" ControlToValidate="txtUserName" CssClass="form-text"></asp:RequiredFieldValidator>
+                              </div>
                             <div class="input-container">
                                 <i class="fa fa-key" aria-hidden="true"></i> 
-                                <asp:TextBox ID="Text_Password" TextMode="Password" placeholder="Password" onfocus="showPass()" runat="server" class="form-control"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"  ErrorMessage="Please enter Password" ControlToValidate="Text_Password" CssClass="form-text"></asp:RequiredFieldValidator>
-                               <%-- <input type="password" class="form-control" placeholder="Password"> --%>
+                                <asp:TextBox ID="txtPassword" TextMode="Password" placeholder="Password" onfocus="showPass()" runat="server" class="form-control"></asp:TextBox>
+                               <asp:RequiredFieldValidator ID="rfvPassword" runat="server"  ErrorMessage="Please enter Password" ControlToValidate="txtPassword" CssClass="form-text"></asp:RequiredFieldValidator>
                             </div>
                             <div class="mb-3 form-check pl-0">
                                 <asp:CheckBox ID ="rememberme" runat="server"  Text ="Remember Me" class="" />
-                                <%--<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Remember Me
-                                </label>--%>
                             </div>
                             <div class="row mb-2">
                                 <div class="col-12 col-sm-4 col-md-4"> 
@@ -135,7 +109,7 @@
                                     Don't have an account? <a href="Registration.aspx" class="remember-btn">Register</a>
                                 </div>
                             </div>
-                            <asp:Button ID="Btn_login" runat="server" Text="Login" OnClick="Btn_login_Click" class="btn btn-primary login-btn" />
+                            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" class="btn btn-primary login-btn" />
                             <asp:Label ID="lblmessage" runat="server" Text=""></asp:Label>
                             <%--<button type="submit" >Log In</button>--%>
                         </form>
@@ -162,23 +136,3 @@
     <script src="../Scripts/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
-
-<%--<script type="text/javascript">
-    function validateLogin() {
-        var username = document.getElementById('<%=TextBox1.ClientID%>').value;
-        var password = document.getElementById('<%=TextBox2.ClientID%>').value;
-        var Rememberme = document.getElementById('<%=rememberme.ClientID%>').checked;
-
-        if (Rememberme) {
-            // Save username and password in cookies
-            document.cookie = "username=" + username + ";";
-            document.cookie = "password=" + password + ";";
-        } else {
-            // Clear existing cookies
-            document.cookie = "username=; expires=Monday, 01 Jan 2024 00:00:00 UTC; path=/;";
-            document.cookie = "password=; expires=Monady, 01 Jan 2024 00:00:00 UTC; path=/;";
-        }
-
-        return true;
-    }
-</script>--%>

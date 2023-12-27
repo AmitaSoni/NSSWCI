@@ -16,3 +16,9 @@ C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNati
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.CoreCompileInputs.cache
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.dll
 C:\Users\Amita Soni\OneDrive\Desktop\NJJM 22-12-2023\NationalSymposium\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.pdb
+F:\Projects\ADG\NSSWCI\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.dll
+F:\Projects\ADG\NSSWCI\ModelNationalSymposium\bin\Debug\ModelNationalSymposium.pdb
+F:\Projects\ADG\NSSWCI\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.AssemblyReference.cache
+F:\Projects\ADG\NSSWCI\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.csproj.CoreCompileInputs.cache
+F:\Projects\ADG\NSSWCI\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.dll
+F:\Projects\ADG\NSSWCI\ModelNationalSymposium\obj\Debug\ModelNationalSymposium.pdb

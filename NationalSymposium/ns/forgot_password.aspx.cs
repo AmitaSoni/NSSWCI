@@ -24,11 +24,12 @@ namespace NationalSymposium.ns
             string a = BllNS.GetUserLoginByEmailId(txtEmail.Text);
             if (a != "Exist")
             {
-                lblMsg.Text = "This email is not registered with us.";
+                Utility.ShowToastrError(this, "This email is not registered with us.", "Error");
             }
             else
             {
-                lblMsg.Text = "Email has forwarded to your registered Email Id to reset the password.";
+                //lblMsg.Text = "Email has forwarded to your registered Email Id to reset the password.";
+                Utility.ShowToastrError(this, "Email has forwarded to your registered Email Id to reset the password.", "Success");
                 var baseUrl = ConfigurationManager.AppSettings["BaseUrl"];
                 string url = baseUrl+"?e = " + txtEmail.Text;
                 Utility.SendHtmlFormattedEmail(txtEmail.Text, "Forgot Password", PopulateBody(txtEmail.Text, url));
@@ -38,7 +39,6 @@ namespace NationalSymposium.ns
         private string PopulateBody(string userName, string url)
         {
             string body = string.Empty;
-            string path = Server.MapPath("~/forgotpassword.html");
             using (StreamReader reader = new StreamReader(Server.MapPath("~/forgotpassword.html")))
             {
                 body = reader.ReadToEnd();
@@ -47,26 +47,5 @@ namespace NationalSymposium.ns
             body = body.Replace("{Url}", url);
             return body;
         }
-        //private void SendHtmlFormattedEmail(string recepientEmail, string subject, string body)
-        //{
-        //    using (MailMessage mailMessage = new MailMessage())
-        //    {
-        //        mailMessage.From = new MailAddress(ConfigurationManager.AppSettings["UserName"]);
-        //        mailMessage.Subject = subject;
-        //        mailMessage.Body = body;
-        //        mailMessage.IsBodyHtml = true;
-        //        mailMessage.To.Add(new MailAddress(recepientEmail));
-        //        SmtpClient smtp = new SmtpClient();
-        //        smtp.Host = ConfigurationManager.AppSettings["Host"];
-        //        smtp.EnableSsl = Convert.ToBoolean(ConfigurationManager.AppSettings["EnableSsl"]);
-        //        System.Net.NetworkCredential NetworkCred = new System.Net.NetworkCredential();
-        //        NetworkCred.UserName = ConfigurationManager.AppSettings["UserName"];
-        //        NetworkCred.Password = ConfigurationManager.AppSettings["Password"];
-        //        smtp.UseDefaultCredentials = true;
-        //        smtp.Credentials = NetworkCred;
-        //        smtp.Port = int.Parse(ConfigurationManager.AppSettings["Port"]);
-        //        smtp.Send(mailMessage);
-        //    }
-        //}
     }
 }

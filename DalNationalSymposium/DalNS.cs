@@ -102,6 +102,19 @@ namespace DalNationalSymposium
         #endregion
 
         #region UserLogin
+
+        public static DataTable GetUserDetails(string userName, string password)
+        {
+            SqlConnection con = new SqlConnection(NSConnectionString);
+            const string sqlCmd = "SP_UserLogin";
+            SqlCommand cmd = new SqlCommand(sqlCmd, con) { CommandType = CommandType.StoredProcedure };
+            cmd.Parameters.AddWithValue("@pEmailId", userName);
+            cmd.Parameters.AddWithValue("@pHashPassword", password);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            return dt;
+        }
         public static DataTable GetUserLogin()
         {
             SqlConnection con = new SqlConnection(NSConnectionString);

@@ -2,6 +2,7 @@
 using ModelNationalSymposium;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,6 +62,19 @@ namespace BllNationalSymposium
         #endregion
 
         #region UserLogin
+        public static UserLogin GetUserDetails(string userName, string password)
+        {
+            DataTable dt = DalNS.GetUserDetails(userName, password);
+            if (dt == null)
+                return null;
+            UserLogin ul = BindModel.GetUserLogin(dt);
+            if (ul != null)
+            {
+                return ul;
+            }
+            return null;
+        }
+
         public static List<UserLogin> GetUserLogin()
         {
             List<UserLogin> lstUserLogin = BindModel.GetUserLogins(DalNS.GetUserLogin());
@@ -70,12 +84,12 @@ namespace BllNationalSymposium
         {
             //UserLogin r = BindModel.GetUserLogin(DalNS.GetUserLoginByEmailId(email));
             return DalNS.Sp_CheckUser(email);
-           // return r;
+            // return r;
         }
-        public static string Sp_ForgotPassword(string email,string password)
+        public static string Sp_ForgotPassword(string email, string password)
         {
             //UserLogin r = BindModel.GetUserLogin(DalNS.GetUserLoginByEmailId(email));
-            return DalNS.Sp_ForgotPassword(email,password);
+            return DalNS.Sp_ForgotPassword(email, password);
             // return r;
         }
         #endregion
