@@ -4,6 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 <link rel="stylesheet" href="../Styles/main.css" />
@@ -31,10 +35,10 @@
 
     <section class="banner">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-12 col-lg-12 text-center">
+            <div class="col-11 col-md-12 col-lg-12 text-center">
                 <h2>National Symposium on Safe Water &amp; Chlorination Initiatives</h2>
             </div>
-            <div class="col-12 col-md-8 col-lg-6"> 
+            <div class="col-11 col-md-8 col-lg-6"> 
                 <ul>
                     <li>
                         <span>Date: </span> <small>12/12/2023</small>

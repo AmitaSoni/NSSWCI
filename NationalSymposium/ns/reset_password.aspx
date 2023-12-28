@@ -12,6 +12,14 @@
     <script src="../Content/AdminLte310/plugins/toastr/toastr.min.js"></script>
     <link href="../Content/AdminLte310/plugins/toastr/toastr.min.css" rel="stylesheet" />
     <title>Jal Jeevan Mission</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="../Styles/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+<link rel="stylesheet" href="../Styles/main.css"/>
+<title>Jal Jeevan Mission</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -32,30 +40,30 @@
         </header>
         <div class="main-content">
 
-            <section class="banner">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-12 col-lg-12 text-center">
-                        <h2>National Symposium on Safe Water &amp; Chlorination Initiatives</h2>
-                    </div>
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <ul>
-                            <li>
-                                <span>Date: </span><small>12/12/2023</small>
-                            </li>
-                            <li>
-                                <span>Venue: </span><strong>Auditorium, SPM Niwas, Kolkata</strong>
-                            </li>
-                            <li>
-                                <span>Organised by:</span> Jal Jeevan Mission 
-                            </li>
-                            <li>
-                                <span>Technical Partner: </span>Development Innovation Lab (DIL) and Evidence Action 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
+    <section class="banner">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-12 col-lg-12 text-center">
+                <h2>National Symposium on Safe Water &amp; Chlorination Initiatives</h2>
+            </div>
+            <div class="col-11 col-md-8 col-lg-6"> 
+                <ul>
+                    <li>
+                        <span>Date: </span> <small>12/12/2023</small>
+                    </li>
+                    <li>
+                        <span>Venue: </span> <strong>Auditorium, SPM Niwas, Kolkata</strong>
+                    </li>
+                    <li>
+                        <span>Organised by:</span> Jal Jeevan Mission 
+                    </li>
+                    <li>
+                        <span>Technical Partner: </span> Development Innovation Lab (DIL) and Evidence Action 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
 
             <section class="card-section">
                 <div class="container">
